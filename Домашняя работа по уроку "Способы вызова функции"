@@ -1,4 +1,4 @@
-def send_email (message, recipient,
+def send_email (message, recipient),
                sender = ("university.help@gmail.com"):
 
     tld_re = -1; tld_se = -1
