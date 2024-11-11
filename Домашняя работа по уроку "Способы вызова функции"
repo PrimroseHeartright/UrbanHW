@@ -13,6 +13,9 @@ def send_email (message, recipient),
         tld_se = sender.find(i)
         if tld_se != -1:
             break
+    if tld_se == -1 or '@' not in sendler:
+        print (f'Невозможно отправить письмо с адреса {sendler}')
+        return
     if tld_re == -1 or '@' not in recipient:
         print (f'Невозможно отправить письмо на адрес {recipient}')
         return
